@@ -1,0 +1,14 @@
+{
+  "name": "random_ideas",
+  "version": "1.0.0",
+  "description": "Idea sharing app. Made with Brad's Traversy js course.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Brad Traversy, Arthur Domański",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
