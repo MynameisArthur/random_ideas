@@ -62,7 +62,11 @@ class IdeaList {
         const tagClass = this.getTagClass(idea.tag);
         return `
         <div class="card" data-id="${idea._id}">
-            <button class="delete"><i class="fas fa-times"></i></button>
+            ${
+              localStorage.getItem('username') === idea.username
+                ? `<button class="delete"><i class="fas fa-times"></i></button>`
+                : ''
+            }
             <h3>
                 ${idea.text}
             </h3>
